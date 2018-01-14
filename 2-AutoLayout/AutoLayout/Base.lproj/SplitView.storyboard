@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="SoV-d4-462">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Split View Controller-->
+        <scene sceneID="UpM-vU-1LA">
+            <objects>
+                <splitViewController id="SoV-d4-462" sceneMemberID="viewController">
+                    <splitViewItems>
+                        <splitViewItem id="486-xY-3hl"/>
+                        <splitViewItem id="wax-kE-RGy"/>
+                    </splitViewItems>
+                    <splitView key="splitView" dividerStyle="thin" vertical="YES" id="dsV-Kf-N2o">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="SoV-d4-462" id="RVB-5E-fnh"/>
+                        </connections>
+                    </splitView>
+                    <connections>
+                        <outlet property="splitView" destination="dsV-Kf-N2o" id="zZo-kj-djp"/>
+                        <segue destination="cPd-sP-BPG" kind="relationship" relationship="splitItems" id="mEA-ap-CLA"/>
+                        <segue destination="ugt-ls-afs" kind="relationship" relationship="splitItems" id="rh2-VV-OAC"/>
+                    </connections>
+                </splitViewController>
+                <customObject id="cct-UD-RZe" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="122" y="1090"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ubd-1j-pgl">
+            <objects>
+                <viewController id="cPd-sP-BPG" sceneMemberID="viewController">
+                    <view key="view" id="inh-HW-NWu">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-Vd-I8k">
+                                <rect key="frame" x="211" y="141" width="28" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left" id="Q3k-S6-Pbe">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="2BF-f8-fxh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-124" y="1605"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hFL-y1-oLv">
+            <objects>
+                <viewController id="ugt-ls-afs" sceneMemberID="viewController">
+                    <view key="view" id="iF5-Oe-zDy">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20r-nw-nbr">
+                                <rect key="frame" x="207" y="141" width="36" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right" id="T0w-Go-cuP">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="yUw-4x-4aJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="371" y="1605"/>
+        </scene>
+    </scenes>
+</document>
