@@ -724,16 +724,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <containerView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQp-AX-F9l">
+                            <containerView translatesAutoresizingMaskIntoConstraints="NO" id="GQp-AX-F9l">
                                 <rect key="frame" x="0.0" y="40" width="480" height="230"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <connections>
                                     <segue destination="ocY-Zj-yY7" kind="embed" id="3Y2-xO-DTh"/>
                                 </connections>
                             </containerView>
-                            <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FO-bo-B7B">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="2FO-bo-B7B">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-B9-hJF">
                                         <rect key="frame" x="11" y="2" width="88" height="32"/>
@@ -744,8 +742,20 @@
                                         </buttonCell>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lDR-aF-RjY"/>
+                                </constraints>
                             </customView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="2FO-bo-B7B" firstAttribute="top" secondItem="GQp-AX-F9l" secondAttribute="bottom" id="Kcs-5w-RUI"/>
+                            <constraint firstItem="GQp-AX-F9l" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="OAR-lg-uMD"/>
+                            <constraint firstItem="GQp-AX-F9l" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="Zgu-O3-UgH"/>
+                            <constraint firstAttribute="bottom" secondItem="2FO-bo-B7B" secondAttribute="bottom" id="bqH-3e-sFs"/>
+                            <constraint firstAttribute="trailing" secondItem="2FO-bo-B7B" secondAttribute="trailing" id="gbl-hI-VVd"/>
+                            <constraint firstItem="2FO-bo-B7B" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="q1s-VN-oWz"/>
+                            <constraint firstAttribute="trailing" secondItem="GQp-AX-F9l" secondAttribute="trailing" id="sbQ-Jt-BDi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

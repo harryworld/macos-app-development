@@ -38,9 +38,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-Vd-I8k">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="V4j-Vd-I8k">
                                 <rect key="frame" x="211" y="141" width="28" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Left" id="Q3k-S6-Pbe">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -48,6 +47,10 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="V4j-Vd-I8k" firstAttribute="centerX" secondItem="inh-HW-NWu" secondAttribute="centerX" id="M12-we-96b"/>
+                            <constraint firstItem="V4j-Vd-I8k" firstAttribute="centerY" secondItem="inh-HW-NWu" secondAttribute="centerY" id="w5G-s7-Idl"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="2BF-f8-fxh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -62,9 +65,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20r-nw-nbr">
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="20r-nw-nbr">
                                 <rect key="frame" x="207" y="141" width="36" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Right" id="T0w-Go-cuP">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -72,6 +74,10 @@
                                 </textFieldCell>
                             </textField>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="20r-nw-nbr" firstAttribute="centerY" secondItem="iF5-Oe-zDy" secondAttribute="centerY" id="kgl-H2-RBM"/>
+                            <constraint firstItem="20r-nw-nbr" firstAttribute="centerX" secondItem="iF5-Oe-zDy" secondAttribute="centerX" id="xHZ-3b-ogs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="yUw-4x-4aJ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
