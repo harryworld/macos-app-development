@@ -11,6 +11,8 @@
 		063FE5C6201D3F0E0047E486 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FE5C5201D3F0E0047E486 /* ViewController.swift */; };
 		063FE5C8201D3F0E0047E486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 063FE5C7201D3F0E0047E486 /* Assets.xcassets */; };
 		063FE5CB201D3F0E0047E486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 063FE5C9201D3F0E0047E486 /* Main.storyboard */; };
+		063FE5D5201D44300047E486 /* LabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063FE5D3201D44300047E486 /* LabelItem.swift */; };
+		063FE5D6201D44300047E486 /* LabelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 063FE5D4201D44300047E486 /* LabelItem.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		063FE5CA201D3F0E0047E486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		063FE5CC201D3F0E0047E486 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		063FE5CD201D3F0E0047E486 /* NSCollectionView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NSCollectionView.entitlements; sourceTree = "<group>"; };
+		063FE5D3201D44300047E486 /* LabelItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelItem.swift; sourceTree = "<group>"; };
+		063FE5D4201D44300047E486 /* LabelItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelItem.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			children = (
 				063FE5C3201D3F0E0047E486 /* AppDelegate.swift */,
 				063FE5C5201D3F0E0047E486 /* ViewController.swift */,
+				063FE5D3201D44300047E486 /* LabelItem.swift */,
+				063FE5D4201D44300047E486 /* LabelItem.xib */,
 				063FE5C7201D3F0E0047E486 /* Assets.xcassets */,
 				063FE5C9201D3F0E0047E486 /* Main.storyboard */,
 				063FE5CC201D3F0E0047E486 /* Info.plist */,
@@ -122,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				063FE5D6201D44300047E486 /* LabelItem.xib in Resources */,
 				063FE5C8201D3F0E0047E486 /* Assets.xcassets in Resources */,
 				063FE5CB201D3F0E0047E486 /* Main.storyboard in Resources */,
 			);
@@ -136,6 +143,7 @@
 			files = (
 				063FE5C6201D3F0E0047E486 /* ViewController.swift in Sources */,
 				063FE5C4201D3F0E0047E486 /* AppDelegate.swift in Sources */,
+				063FE5D5201D44300047E486 /* LabelItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

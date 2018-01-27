@@ -25,3 +25,17 @@ class ViewController: NSViewController {
 
 }
 
+extension ViewController: NSCollectionViewDataSource {
+    
+    static let labelItem = "LabelItem"
+    
+    func collectionView(_ collectionView: NSCollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func collectionView(_ collectionView: NSCollectionView, itemForRepresentedObjectAt indexPath: IndexPath) -> NSCollectionViewItem {
+        let item = collectionView.makeItem(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: ViewController.labelItem), for: indexPath)
+        return item
+    }
+}
+
